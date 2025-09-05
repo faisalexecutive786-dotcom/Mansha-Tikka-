@@ -3,480 +3,639 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Mansha Tikka - Authentic Pakistani Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Samosa - Premium Frozen Food Products | Lahore - Since 1994</title>
+    <meta name="description" content="Lucky Samosa offers authentic Pakistani frozen food products including premium samosas, rolls, kababs, and patties. Quality uncooked items delivered fresh in Lahore since 1994. Order now via WhatsApp!">
+    <meta name="keywords" content="Lucky Samosa, Premium Frozen Samosas, Frozen Snacks, Pakistani food, samosa, kabab, rolls, patties, Lahore, frozen food delivery, authentic Pakistani snacks">
+    <meta name="author" content="Lucky Samosa">
+    
+    <!-- ============================================= -->
+    <!-- FAVICON IMPLEMENTATION - MODERN BEST PRACTICES -->
+    <!-- ============================================= -->
+    
+    <!-- Modern PNG favicons for various sizes -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://page.gensparksite.com/v1/base64_upload/a330517b599918ec72377421d8e2f87a">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://page.gensparksite.com/jupyter/tooluse_vtCtm8P_T62Mov5vrINTAQ/output/lucky-samosa-favicon-32.webp">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://page.gensparksite.com/v1/base64_upload/b9a5856e20f53b7124e09ef20c7bf95f">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://page.gensparksite.com/v1/base64_upload/348246d6a3c7d70f3c50438d29578729">
+    
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://page.gensparksite.com/v1/base64_upload/3af6f11a4b0330844713587ee5415e40">
+    
+    <!-- Android Chrome icons for various uses -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://page.gensparksite.com/v1/base64_upload/34a848355029c789cc8507f421d3c391">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1">
+    
+    <!-- Additional meta tags for better favicon support -->
+    <meta name="msapplication-TileColor" content="#ff8c00">
+    <meta name="theme-color" content="#ff8c00">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lucky Samosa - Premium Frozen Food Products | Lahore">
+    <meta property="og:description" content="Authentic Pakistani frozen food products delivered fresh in Lahore since 1994. Premium samosas, rolls, kababs and patties with 30 years of experience.">
+    <meta property="og:image" content="https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1">
+    <meta property="og:url" content="https://faisalexecutive786-dotcom.github.io/Lucky-Samosa/">
+    <meta property="og:type" content="business.business">
+    <meta property="og:site_name" content="Lucky Samosa">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lucky Samosa - Premium Frozen Food Products">
+    <meta name="twitter:description" content="Authentic Pakistani frozen food products delivered fresh in Lahore since 1994.">
+    <meta name="twitter:image" content="https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Lucky Samosa",
+        "description": "Premium frozen Pakistani food products including samosas, rolls, kababs and patties",
+        "foundingDate": "1994",
+        "url": "https://faisalexecutive786-dotcom.github.io/Lucky-Samosa/",
+        "telephone": "+92-321-4591508",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop# 752, Sarwar Road, Saddar Bazar North Cantt",
+            "addressLocality": "Lahore",
+            "addressCountry": "Pakistan"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "31.5483932",
+            "longitude": "74.3773727"
+        },
+        "openingHours": [
+            "Mo-Su 09:00-22:00"
+        ],
+        "paymentAccepted": "Cash, JazzCash, EasyPaisa, Bank Transfer",
+        "priceRange": "$$",
+        "sameAs": [
+            "https://youtube.com/@luckyfrozezfood-b7y?si=bkipXKSvqVgcWSt9",
+            "https://www.instagram.com/premiumluckysamosa?igsh=cTlnbnExeGUyNHUy&utm_source=qr",
+            "https://www.tiktok.com/@lucky.frozen.food",
+            "https://www.facebook.com/share/173fC3JkwP/?mibextid=wwXIfr"
+        ]
+    }
+    </script>
+    
+    <!-- CSS Libraries -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
         
-        .banner-scroll {
-            animation: scroll-banner 60s linear infinite;
+        .gradient-bg {
+            background: linear-gradient(135deg, #ff8c00 0%, #ffa500 50%, #ff6347 100%);
         }
         
-        @keyframes scroll-banner {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+        .food-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            will-change: transform;
         }
         
-        .gradient-orange {
-            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+        .food-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(255, 140, 0, 0.3);
         }
         
-        .gradient-green {
+        .whatsapp-btn {
             background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            transition: all 0.3s ease;
         }
         
-        .gradient-red {
-            background: linear-gradient(135deg, #ff4757 0%, #ff3838 100%);
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
         }
         
-        .menu-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .order-btn {
+            background: linear-gradient(135deg, #ff8c00 0%, #ff6347 100%);
+            transition: all 0.3s ease;
         }
         
-        .menu-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        .order-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
         }
         
-        .floating-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            animation: bounce 2s infinite;
+        .hero-section {
+            background: linear-gradient(135deg, rgba(255, 140, 0, 0.9) 0%, rgba(255, 99, 71, 0.9) 100%), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
         }
         
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
         }
         
-        @media (max-width: 768px) {
-            .floating-btn {
-                bottom: 15px;
-                right: 15px;
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .announcement-bar {
+            background: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 14px;
+            font-weight: 600;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        
+        .announcement-text {
+            display: inline-block;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
             }
         }
         
-        .hero-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .search-container {
+            position: relative;
         }
         
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            z-index: 50;
+            max-height: 300px;
+            overflow-y: auto;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .badge {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-bestseller {
+            background: linear-gradient(135deg, #ff6b6b, #ff4757);
+            color: white;
+        }
+        
+        .badge-save50 {
+            background: linear-gradient(135deg, #00d2d3, #54a0ff);
+            color: white;
+        }
+        
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .delivery-app {
+            transition: all 0.3s ease;
+        }
+        
+        .delivery-app:hover {
+            transform: scale(1.1);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .maps-btn {
+            background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .maps-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(66, 133, 244, 0.4);
+        }
+        
+        .category-filter.active {
+            background: linear-gradient(135deg, #ff8c00 0%, #ff6347 100%);
+            color: white;
+        }
+        
+        .category-filter:not(.active) {
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .category-filter:not(.active):hover {
+            background: #fef3cd;
+        }
+        
+        .logo-main {
+            height: 60px;
+            width: auto;
+            max-width: 300px;
+            object-fit: contain;
+        }
+        
+        .logo-mobile {
+            height: 48px;
+            width: auto;
+            max-width: 200px;
+            object-fit: contain;
+        }
+        
+        .logo-footer {
+            height: 40px;
+            width: auto;
+            max-width: 150px;
+            object-fit: contain;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-main {
+                height: 48px;
+                max-width: 200px;
+            }
+        }
+        
+         {
+            .announcement-bar, .modal, .search-container { display: none !important; }
+            .floating-whatsapp { display: none !important; }
+            body { font-size: 12px; }
+            .food-card { break-inside: avoid; }
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
-    
-    <!-- Promotional Banner -->
-    <div class="gradient-red text-white py-2 overflow-hidden">
-        <div class="banner-scroll whitespace-nowrap text-sm font-semibold">
-            🔥 Grand Opening Special! Get 20% OFF on orders above Rs. 2000 | Free Home Delivery | Call Now: 0321-8050040 🔥
-        </div>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-text">🎉 Fresh & Authentic Pakistani Frozen Food Since 1994 | Premium Frozen Samosas & Snacks | Free Delivery on Orders Above Rs. 2500 | Call Now: 03214591508 | Premium Quality Guaranteed 🎉</div>
     </div>
 
     <!-- Header -->
-    <header class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 gradient-orange rounded-full flex items-center justify-center">
-                        <i class="fas fa-fire text-white text-xl"></i>
+    <header class="gradient-bg shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div class="container mx-auto px-6 py-4 relative z-10">
+            <div class="flex items-center justify-between flex-wrap">
+                <div class="flex items-center space-x-4">
+                    <!-- Professional Logo Implementation -->
+                    <div class="hidden md:block">
+                        <img src="https://page.gensparksite.com/jupyter/tooluse_vtCtm8P_T62Mov5vrINTAQ/output/lucky-samosa-header-logo.webp" 
+                             alt="Lucky Samosa - Premium Frozen Food Products Since 1994" 
+                             class="logo-main"
+                             onerror="this.src='https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1'">
                     </div>
-                    <div>
-                        <h1 class="text-2xl md:text-3xl font-bold text-orange-600">Mansha Tikka</h1>
-                        <p class="text-xs md:text-sm text-gray-600">Managed by Mr. Atique Ur Rehman</p>
+                    <div class="md:hidden">
+                        <img src="https://page.gensparksite.com/jupyter/tooluse_vtCtm8P_T62Mov5vrINTAQ/output/lucky-samosa-mobile-header-logo.webp" 
+                             alt="Lucky Samosa" 
+                             class="logo-mobile"
+                             onerror="this.src='https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1'">
                     </div>
                 </div>
-                
-                <nav class="hidden md:flex space-x-6">
-                    <a href="#home" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors">Home</a>
-                    <a href="#menu" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors">Menu</a>
-                    <a href="#about" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors">About</a>
-                    <a href="#contact" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors">Contact</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <nav class="flex space-x-6">
+                        <a href="#products" class="text-white hover:text-orange-200 transition-colors font-semibold">Products</a>
+                        <a href="#about" class="text-white hover:text-orange-200 transition-colors font-semibold">About</a>
+                        <a href="#delivery" class="text-white hover:text-orange-200 transition-colors font-semibold">Delivery</a>
+                        <a href="#contact" class="text-white hover:text-orange-200 transition-colors font-semibold">Contact</a>
+                    </nav>
+                    <a href="https://wa.me/923214591508" class="whatsapp-btn text-white px-6 py-3 rounded-full font-bold inline-flex items-center space-x-2 shadow-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Order Now</span>
+                    </a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <nav class="flex flex-col space-y-3">
+                    <a href="#products" class="text-white hover:text-orange-200 transition-colors font-semibold">Products</a>
+                    <a href="#about" class="text-white hover:text-orange-200 transition-colors font-semibold">About</a>
+                    <a href="#delivery" class="text-white hover:text-orange-200 transition-colors font-semibold">Delivery</a>
+                    <a href="#contact" class="text-white hover:text-orange-200 transition-colors font-semibold">Contact</a>
+                    <a href="https://wa.me/923214591508" class="whatsapp-btn text-white px-4 py-2 rounded-full font-bold inline-flex items-center space-x-2 shadow-lg w-fit">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Order Now</span>
+                    </a>
                 </nav>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white py-16 md:py-20">
-        <div class="container mx-auto px-4 text-center">
-            <div class="fade-in">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    Welcome to <span class="text-yellow-300">Mansha Tikka</span>
-                </h1>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                    Experience the authentic taste of Pakistan with our premium BBQ and traditional cuisine
+    <section class="hero-section py-20 text-center text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="floating-animation">
+                <h2 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+                    Authentic Taste,<br>
+                    <span class="text-yellow-300">Frozen Fresh</span>
+                </h2>
+                <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto font-light">
+                    Premium quality uncooked samosas, rolls, kababs and patties delivered fresh to your doorstep in Lahore
                 </p>
                 
+                <!-- Search Bar -->
+                <div class="search-container max-w-md mx-auto mb-8">
+                    <div class="relative">
+                        <input type="text" id="product-search" placeholder="Search products..." 
+                               class="w-full px-6 py-4 text-gray-800 rounded-full border-0 focus:ring-4 focus:ring-orange-300 outline-none text-lg">
+                        <i class="fas fa-search absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <div id="search-results" class="search-results hidden"></div>
+                </div>
+                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="tel:03218050040" 
-                       class="gradient-red text-white px-8 py-4 rounded-full text-lg font-bold hover:transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-                        <i class="fas fa-phone mr-2"></i>Call Now: 0321-8050040
+                    <a href="https://wa.me/923214591508" class="whatsapp-btn text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center space-x-3 shadow-xl">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>WhatsApp: 03214591508</span>
                     </a>
-                    <a href="https://wa.me/923218050040?text=Hello!%20I%20want%20to%20place%20an%20order%20from%20Mansha%20Tikka.%20Please%20help%20me%20with%20the%20menu." 
-                       class="gradient-green text-white px-8 py-4 rounded-full text-lg font-bold hover:transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
-                        <i class="fab fa-whatsapp mr-2"></i>WhatsApp Order
+                    <a href="#products" class="order-btn text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center space-x-3 shadow-xl">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span>View Products</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Why Choose Mansha Tikka?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center p-6 fade-in">
-                    <div class="w-16 h-16 gradient-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-award text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Premium Quality</h3>
-                    <p class="text-gray-600">Fresh ingredients and authentic spices</p>
-                </div>
-                <div class="text-center p-6 fade-in">
-                    <div class="w-16 h-16 gradient-green rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-clock text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
-                    <p class="text-gray-600">Quick and reliable service</p>
-                </div>
-                <div class="text-center p-6 fade-in">
-                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-utensils text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Expert Chefs</h3>
-                    <p class="text-gray-600">Experienced culinary masters</p>
-                </div>
-                <div class="text-center p-6 fade-in">
-                    <div class="w-16 h-16 gradient-red rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heart text-white text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Made with Love</h3>
-                    <p class="text-gray-600">Every dish crafted with passion</p>
-                </div>
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Our Premium Products</h2>
+                <div class="w-24 h-1 gradient-bg mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Handcrafted with authentic recipes, frozen fresh for your convenience
+                </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Delicious Menu</h2>
-            
-            <!-- BBQ Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 text-orange-600">🔥 BBQ Specialties</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-red-400 to-orange-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍖</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Tikka چکن ٹکہ</h4>
-                        <p class="text-gray-600 mb-4">Tender marinated chicken grilled to perfection</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 1400<br>
-                            <span class="text-sm">Half: Rs. 700 | Single: Rs. 350</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Tikka', 1400)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-red-500 to-pink-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍗</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Kabab چکن کباب</h4>
-                        <p class="text-gray-600 mb-4">Juicy chicken kababs with aromatic spices</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 1800<br>
-                            <span class="text-sm">Half: Rs. 900 | Single: Rs. 450</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Kabab', 1800)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-yellow-400 to-red-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🥘</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Malai Boti چکن ملائی بوٹی</h4>
-                        <p class="text-gray-600 mb-4">Creamy and tender chicken pieces</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2000<br>
-                            <span class="text-sm">Half: Rs. 1000 | Single: Rs. 500</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Malai Boti', 2000)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-red-600 to-red-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🥩</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Beef Kabab بیف کباب</h4>
-                        <p class="text-gray-600 mb-4">Premium beef kababs with traditional spices</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 1920<br>
-                            <span class="text-sm">Half: Rs. 960 | Single: Rs. 480</span>
-                        </div>
-                        <button onclick="orderItem('Beef Kabab', 1920)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🌶️</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Seekh Kabab سیخ کباب</h4>
-                        <p class="text-gray-600 mb-4">Spicy minced meat grilled on skewers</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 1800<br>
-                            <span class="text-sm">Half: Rs. 900 | Single: Rs. 450</span>
-                        </div>
-                        <button onclick="orderItem('Seekh Kabab', 1800)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-purple-500 to-red-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍽️</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Mix BBQ مکس بی بی کیو</h4>
-                        <p class="text-gray-600 mb-4">Assorted BBQ platter with variety</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Per KG: Rs. 1400
-                        </div>
-                        <button onclick="orderItem('Mix BBQ', 1400)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
+            <!-- Product Categories -->
+            <div class="mb-8">
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button class="category-filter px-6 py-3 rounded-full font-semibold transition-all active" data-category="all">All Products</button>
+                    <button class="category-filter px-6 py-3 rounded-full font-semibold transition-all" data-category="samosas">Samosas</button>
+                    <button class="category-filter px-6 py-3 rounded-full font-semibold transition-all" data-category="rolls">Rolls</button>
+                    <button class="category-filter px-6 py-3 rounded-full font-semibold transition-all" data-category="kababs">Kababs</button>
+                    <button class="category-filter px-6 py-3 rounded-full font-semibold transition-all" data-category="others">Others</button>
                 </div>
             </div>
 
-            <!-- Karahi Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 text-orange-600">🍲 Karahi Specialties</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-red-400 to-yellow-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍛</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Karahi چکن کڑاہی</h4>
-                        <p class="text-gray-600 mb-4">Traditional chicken karahi with fresh tomatoes</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 1800<br>
-                            <span class="text-sm">Half: Rs. 900</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Karahi', 1800)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-green-400 to-yellow-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🌶️</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Jalfrezi چکن جلفریزی</h4>
-                        <p class="text-gray-600 mb-4">Spicy chicken with mixed vegetables</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2000<br>
-                            <span class="text-sm">Half: Rs. 1000</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Jalfrezi', 2000)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-blue-300 to-white rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🤍</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">White Chicken Karahi وائٹ چکن کڑاہی</h4>
-                        <p class="text-gray-600 mb-4">Creamy white karahi with yogurt base</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2200<br>
-                            <span class="text-sm">Half: Rs. 1100</span>
-                        </div>
-                        <button onclick="orderItem('White Chicken Karahi', 2200)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-yellow-500 to-orange-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍖</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Mutton Balti مٹن بالٹی</h4>
-                        <p class="text-gray-600 mb-4">Traditional mutton cooked in balti style</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2200<br>
-                            <span class="text-sm">Half: Rs. 1100</span>
-                        </div>
-                        <button onclick="orderItem('Mutton Balti', 2200)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-red-500 to-red-700 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🥩</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Beef Karahi بیف کڑاہی</h4>
-                        <p class="text-gray-600 mb-4">Rich and flavorful beef karahi</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2400<br>
-                            <span class="text-sm">Half: Rs. 1200</span>
-                        </div>
-                        <button onclick="orderItem('Beef Karahi', 2400)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-brown-400 to-red-500 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🐑</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Mutton Karahi مٹن کڑاہی</h4>
-                        <p class="text-gray-600 mb-4">Premium mutton karahi with authentic taste</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 4000<br>
-                            <span class="text-sm">Half: Rs. 2000</span>
-                        </div>
-                        <button onclick="orderItem('Mutton Karahi', 4000)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6">
-                        <div class="w-full h-40 bg-gradient-to-r from-orange-300 to-yellow-400 rounded-lg mb-4 flex items-center justify-center">
-                            <span class="text-5xl">🍲</span>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Chicken Handi چکن ہانڈی</h4>
-                        <p class="text-gray-600 mb-4">Slow-cooked chicken in traditional handi</p>
-                        <div class="text-lg font-bold text-orange-600 mb-4">
-                            Full: Rs. 2400<br>
-                            <span class="text-sm">Half: Rs. 1200</span>
-                        </div>
-                        <button onclick="orderItem('Chicken Handi', 2400)" 
-                                class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            <i class="fas fa-shopping-cart mr-2"></i>Order Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Beverages & Extras -->
-            <div class="mb-16">
-                <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 text-orange-600">🥤 Beverages & Extras</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6 text-center">
-                        <div class="text-4xl mb-4">🥤</div>
-                        <h4 class="text-lg font-bold mb-2">Soft Drinks</h4>
-                        <p class="text-gray-600 mb-4">Coke, Pepsi, Sprite, Fanta</p>
-                        <div class="text-lg font-bold text-orange-600">Rs. 80</div>
-                    </div>
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6 text-center">
-                        <div class="text-4xl mb-4">🍞</div>
-                        <h4 class="text-lg font-bold mb-2">Fresh Naan راتا</h4>
-                        <p class="text-gray-600 mb-4">Freshly baked traditional naan</p>
-                        <div class="text-lg font-bold text-orange-600">Rs. 50</div>
-                    </div>
-                    <div class="menu-card bg-white rounded-lg shadow-md p-6 text-center">
-                        <div class="text-4xl mb-4">🥬</div>
-                        <h4 class="text-lg font-bold mb-2">Fresh Chutney فرش چٹنی</h4>
-                        <p class="text-gray-600 mb-4">Mint and tamarind chutney</p>
-                        <div class="text-lg font-bold text-orange-600">Rs. 150</div>
-                    </div>
-                </div>
+            <!-- Products Grid -->
+            <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Products will be loaded here dynamically -->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">About Mansha Tikka</h2>
-                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Welcome to Mansha Tikka, where tradition meets taste! Under the expert management of 
-                        <span class="font-bold text-orange-600">Mr. Atique Ur Rehman</span>, we have been serving 
-                        authentic Pakistani cuisine with passion and dedication.
-                    </p>
-                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Our secret lies in using the finest ingredients, traditional cooking methods, and recipes 
-                        passed down through generations. Every dish is prepared with love and attention to detail.
-                    </p>
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Why Choose Lucky Samosa?</h2>
+                <div class="w-24 h-1 gradient-bg mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Your trusted partner for authentic Pakistani frozen food products since 1994
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Premium Quality</h3>
+                    <p class="text-gray-600">Only the finest ingredients and authentic recipes since 1994</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-snowflake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Frozen Fresh</h3>
+                    <p class="text-gray-600">Premium frozen samosas preserved at peak freshness for maximum flavor</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Quick Delivery</h3>
+                    <p class="text-gray-600">Fast delivery across Lahore with proper cold storage for frozen snacks</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-lg">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Trusted Service</h3>
+                    <p class="text-gray-600">30 years of experience serving satisfied customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Apps Section -->
+    <section id="delivery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Order Through Delivery Apps</h2>
+                <div class="w-24 h-1 gradient-bg mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Use your favorite delivery app to order from Lucky Samosa
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-5xl mx-auto">
+                <div class="delivery-app text-center">
+                    <a href="#" onclick="openDeliveryApp('careem')" class="block p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-green-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800">Careem</h3>
+                    </a>
+                </div>
+                <div class="delivery-app text-center">
+                    <a href="#" onclick="openDeliveryApp('uber')" class="block p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800">Uber</h3>
+                    </a>
+                </div>
+                <div class="delivery-app text-center">
+                    <a href="#" onclick="openDeliveryApp('yango')" class="block p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-yellow-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800">Yango</h3>
+                    </a>
+                </div>
+                <div class="delivery-app text-center">
+                    <a href="#" onclick="openDeliveryApp('bykea')" class="block p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-orange-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-motorcycle text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800">Bykea</h3>
+                    </a>
+                </div>
+                <div class="delivery-app text-center">
+                    <a href="#" onclick="openDeliveryApp('indrive')" class="block p-6 bg-gray-50 rounded-lg shadow-lg hover:shadow-xl">
+                        <div class="w-16 h-16 mx-auto mb-4 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-car text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-800">inDrive</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Payment Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Contact & Payment</h2>
+                <div class="w-24 h-1 gradient-bg mx-auto rounded-full mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Get in touch or make a payment through multiple convenient options
+                </p>
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        <div class="flex items-center space-x-4">
+                            <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800">WhatsApp Orders</h4>
+                                <a href="https://wa.me/923214591508" class="text-orange-500 hover:text-orange-600 font-semibold text-lg">
+                                    03214591508
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800">Store Location</h4>
+                                <p class="text-gray-600">Shop# 752, Sarwar Road<br>Saddar Bazar North Cantt. Lahore</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-800">Business Hours</h4>
+                                <p class="text-gray-600">Daily: 9:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="text-center p-4 bg-orange-50 rounded-lg">
-                            <div class="text-2xl font-bold text-orange-600">5+</div>
-                            <div class="text-sm text-gray-600">Years Experience</div>
+                    <!-- Payment Methods -->
+                    <div class="space-y-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Payment Methods</h3>
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="gradient-bg w-12 h-12 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-university text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800">Bank Transfer</h4>
+                                    <p class="text-gray-600">Bank Alfalah</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-800 font-mono bg-gray-50 p-3 rounded">
+                                Account: 55225002288209<br>
+                                Name: Lucky Samosa
+                            </p>
                         </div>
-                        <div class="text-center p-4 bg-green-50 rounded-lg">
-                            <div class="text-2xl font-bold text-green-600">10K+</div>
-                            <div class="text-sm text-gray-600">Happy Customers</div>
-                        </div>
-                        <div class="text-center p-4 bg-blue-50 rounded-lg">
-                            <div class="text-2xl font-bold text-blue-600">4.9★</div>
-                            <div class="text-sm text-gray-600">Average Rating</div>
-                        </div>
-                        <div class="text-center p-4 bg-purple-50 rounded-lg">
-                            <div class="text-2xl font-bold text-purple-600">20+</div>
-                            <div class="text-sm text-gray-600">Menu Items</div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-lg">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-mobile-alt text-white"></i>
+                                    </div>
+                                    <h4 class="font-bold text-gray-800">JazzCash</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">Mohsin Ali</p>
+                                <p class="text-gray-800 font-mono">03234162685</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-lg">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <div class="gradient-bg w-10 h-10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-mobile-alt text-white"></i>
+                                    </div>
+                                    <h4 class="font-bold text-gray-800">EasyPaisa</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">Mohsin Ali</p>
+                                <p class="text-gray-800 font-mono">03214591508</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div>
-                    <div class="gradient-orange text-white p-8 rounded-xl text-center">
-                        <i class="fas fa-user-tie text-5xl mb-4"></i>
-                        <h3 class="text-2xl font-bold mb-2">Mr. Atique Ur Rehman</h3>
-                        <p class="text-lg mb-2">Restaurant Manager</p>
-                        <p class="text-sm opacity-90 mb-6">"Serving quality food with passion and pride"</p>
-                        
-                        <div class="space-y-3">
-                            <div class="flex items-center justify-center space-x-2">
-                                <i class="fas fa-phone"></i>
-                                <span>0321-8050040</span>
-                            </div>
-                            <div class="flex items-center justify-center space-x-2">
-                                <i class="fas fa-clock"></i>
-                                <span>Daily 11:00 AM - 11:00 PM</span>
-                            </div>
+
+                <!-- Google Map -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Find Our Store</h3>
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5647!2d74.3747978!3d31.5483932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMyJzU0LjIiTiA3NMKwMjInMzguNSJF!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        <div class="text-center mt-4">
+                            <a href="https://www.google.com/maps/place/31%C2%B032'54.2%22N+74%C2%B022'38.5%22E/@31.5483934,74.3747862,707m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d31.5483889!4d74.3773611?hl=en&entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D" 
+                               target="_blank" 
+                               class="maps-btn text-white px-8 py-3 rounded-full font-bold text-lg inline-flex items-center space-x-3 shadow-xl">
+                                <i class="fas fa-directions text-xl"></i>
+                                <span>Open in Google Maps</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -484,255 +643,542 @@
         </div>
     </section>
 
-    <!-- Customer Reviews -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
+    <!-- Social Media & Footer -->
+    <footer class="gradient-bg py-12 text-white">
+        <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-white font-bold">AH</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Ahmed Hassan</h4>
-                            <div class="flex text-yellow-400 text-sm">★★★★★</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Best tikka in town! The taste is absolutely authentic and delivery is always on time."</p>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-white font-bold">SK</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Sara Khan</h4>
-                            <div class="flex text-yellow-400 text-sm">★★★★★</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Amazing karahi! The spices are perfectly balanced. Mr. Atique has done an excellent job!"</p>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-md p-6">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-white font-bold">MA</span>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Muhammad Ali</h4>
-                            <div class="flex text-yellow-400 text-sm">★★★★★</div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Outstanding quality and service! The BBQ is grilled to perfection. Family favorite!"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-900 text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 gradient-red rounded-full flex items-center justify-center">
-                                <i class="fas fa-phone text-white"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold">Phone</p>
-                                <a href="tel:03218050040" class="text-gray-300 hover:text-white">0321-8050040</a>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 gradient-green rounded-full flex items-center justify-center">
-                                <i class="fab fa-whatsapp text-white"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold">WhatsApp</p>
-                                <a href="https://wa.me/923218050040" class="text-gray-300 hover:text-white">0321-8050040</a>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-map-marker-alt text-white"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold">Address</p>
-                                <p class="text-gray-300">Main Market, Lahore, Pakistan</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                                <i class="fas fa-clock text-white"></i>
-                            </div>
-                            <div>
-                                <p class="font-bold">Hours</p>
-                                <p class="text-gray-300">Daily: 11:00 AM - 11:00 PM</p>
-                            </div>
-                        </div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://page.gensparksite.com/jupyter/tooluse_vtCtm8P_T62Mov5vrINTAQ/output/lucky-samosa-footer-logo.webp" 
+                             alt="Lucky Samosa Logo" 
+                             class="logo-footer"
+                             onerror="this.src='https://page.gensparksite.com/v1/base64_upload/b89e223677b62ac5c61c9749625293e1'">
                     </div>
-                    
-                    <div class="mt-8">
-                        <h4 class="text-xl font-bold mb-4">Follow Us</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:transform hover:scale-110 transition-all">
-                                <i class="fab fa-facebook-f text-white"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center hover:transform hover:scale-110 transition-all">
-                                <i class="fab fa-instagram text-white"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center hover:transform hover:scale-110 transition-all">
-                                <i class="fab fa-twitter text-white"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:transform hover:scale-110 transition-all">
-                                <i class="fab fa-tiktok text-white"></i>
-                            </a>
-                        </div>
+                    <p class="text-orange-100 mb-4">
+                        Your trusted source for premium frozen Pakistani food products in Lahore since 1994.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://youtube.com/@luckyfrozezfood-b7y?si=bkipXKSvqVgcWSt9" target="_blank" 
+                           class="social-icon bg-red-600 p-3 rounded-full hover:bg-red-700">
+                            <i class="fab fa-youtube text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/premiumluckysamosa?igsh=cTlnbnExeGUyNHUy&utm_source=qr" target="_blank" 
+                           class="social-icon bg-pink-600 p-3 rounded-full hover:bg-pink-700">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@lucky.frozen.food" target="_blank" 
+                           class="social-icon bg-gray-800 p-3 rounded-full hover:bg-gray-900">
+                            <i class="fab fa-tiktok text-white"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/173fC3JkwP/?mibextid=wwXIfr" target="_blank" 
+                           class="social-icon bg-blue-600 p-3 rounded-full hover:bg-blue-700">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
                     </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
-                    <form class="space-y-4" onsubmit="sendMessage(event)">
-                        <input type="text" placeholder="Your Name" required 
-                               class="w-full px-4 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-orange-500 focus:outline-none">
-                        <input type="tel" placeholder="Phone Number" required 
-                               class="w-full px-4 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-orange-500 focus:outline-none">
-                        <textarea placeholder="Your Message" rows="4" required 
-                                  class="w-full px-4 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-orange-500 focus:outline-none"></textarea>
-                        <button type="submit" class="w-full gradient-orange text-white py-3 rounded-lg font-bold hover:transform hover:scale-105 transition-all">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-8">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                <div>
-                    <h3 class="text-2xl font-bold text-orange-400 mb-4">Mansha Tikka</h3>
-                    <p class="text-gray-400 mb-4">Authentic Pakistani cuisine served with passion and tradition.</p>
-                    <p class="text-sm text-gray-500">Managed by Mr. Atique Ur Rehman</p>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#menu" class="hover:text-orange-400 transition-colors">Menu</a></li>
-                        <li><a href="#about" class="hover:text-orange-400 transition-colors">About Us</a></li>
-                        <li><a href="#contact" class="hover:text-orange-400 transition-colors">Contact</a></li>
-                        <li><a href="tel:03218050040" class="hover:text-orange-400 transition-colors">Call Us</a></li>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#products" class="text-orange-100 hover:text-white transition-colors">Our Products</a></li>
+                        <li><a href="#about" class="text-orange-100 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#delivery" class="text-orange-100 hover:text-white transition-colors">Delivery Apps</a></li>
+                        <li><a href="#contact" class="text-orange-100 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://wa.me/923214591508" class="text-orange-100 hover:text-white transition-colors">Place Order</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
-                    <p class="text-gray-400 mb-2">📞 <a href="tel:03218050040" class="hover:text-orange-400">0321-8050040</a></p>
-                    <p class="text-gray-400 mb-2">📍 Main Market, Lahore</p>
-                    <p class="text-gray-400">🕒 Daily 11AM - 11PM</p>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <p class="text-orange-100 flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            03214591508
+                        </p>
+                        <p class="text-orange-100 flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            Shop# 752, Sarwar Road<br>Saddar Bazar North Cantt. Lahore
+                        </p>
+                        <p class="text-orange-100 flex items-center">
+                            <i class="fas fa-clock mr-3"></i>
+                            Daily 9AM - 10PM
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-500">&copy; 2024 Mansha Tikka. All rights reserved. Made with ❤️ for food lovers.</p>
+            <div class="border-t border-orange-300 mt-8 pt-8 text-center">
+                <p class="text-orange-100">
+                    © 2024 Lucky Samosa. All rights reserved. | Premium Frozen Food Products Lahore | Established 1994
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <div class="floating-btn">
-        <a href="https://wa.me/923218050040?text=Hello!%20I%20want%20to%20place%20an%20order%20from%20Mansha%20Tikka.%20Please%20help%20me%20with%20the%20menu." 
-           class="gradient-green text-white p-4 rounded-full shadow-lg block">
-            <i class="fab fa-whatsapp text-2xl"></i>
-        </a>
+    <!-- Order Confirmation Modal -->
+    <div id="order-modal" class="modal">
+        <div class="bg-white p-8 rounded-lg shadow-xl max-w-md mx-4">
+            <div class="text-center">
+                <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-info-circle text-white text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Order Information</h3>
+                <p class="text-gray-600 mb-6">
+                    Note: Customer will pay the delivery charges upon receiving the order.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <button onclick="closeModal()" class="px-6 py-2 bg-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-400 transition-colors">
+                        Cancel
+                    </button>
+                    <button id="proceed-order" class="whatsapp-btn text-white px-6 py-2 rounded-full font-semibold">
+                        Proceed to WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        // Order function
-        function orderItem(itemName, price) {
-            const message = `Hello! I want to order ${itemName} (Rs. ${price}) from Mansha Tikka. Please confirm my order and delivery details.`;
-            const whatsappUrl = `https://wa.me/923218050040?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
+        // Product data with real images
+        const products = [
+            {
+                name: "Aalu Samosa",
+                price: "Rs. 140",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Classic potato-filled samosas with authentic spices and premium ingredients. Perfect crispy texture when fried.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/b72bfcb890e9d9f5e7f17a1eb7d4d253",
+                category: "samosas"
+            },
+            {
+                name: "Special Aalu Samosa",
+                price: "Rs. 180",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Our signature potato samosa with special spice blend and premium quality filling. Taste the triangular delights!",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/521cc1a24b8df706059fa6f4b0e440c8",
+                category: "samosas"
+            },
+            {
+                name: "Aalu Chicken Samosa",
+                price: "Rs. 350",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Delicious combination of potato and tender chicken pieces in crispy pastry. Premium frozen samosas at their best.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/56e4a9d6a5d5413eebe73593c68e158a",
+                category: "samosas"
+            },
+            {
+                name: "Chicken Sabzi Macaroni Samosa",
+                price: "Rs. 400",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Unique fusion samosa with chicken, vegetables and macaroni. A modern twist on traditional frozen snacks.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/e0bf24f3854c5f01e57ee739af2e13d0",
+                category: "samosas"
+            },
+            {
+                name: "Chicken Cheese Samosa",
+                price: "Rs. 450",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Tender chicken with melted cheese in crispy pastry. Premium frozen samosas with a modern cheesy twist.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/9433334e169d53d2866567ade383053d",
+                category: "samosas"
+            },
+            {
+                name: "Chicken Malae Boti Samosa",
+                price: "Rs. 500",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Creamy malae boti chicken in crispy pastry. Our bestselling premium frozen samosas with rich, creamy filling.",
+                badge: "Best-Seller",
+                image: "https://page.gensparksite.com/v1/base64_upload/0c7dbe1cb0e8d75a6f7f5507e7cee62e",
+                category: "samosas"
+            },
+            {
+                name: "Aalu Roll",
+                price: "Rs. 160",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Crispy potato rolls ready to fry. Perfect for tea time or as a quick snack with authentic Pakistani flavors.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/d73b9f3b4c4fb4ae1bd5d731c2877b4a",
+                category: "rolls"
+            },
+            {
+                name: "Aalu Chicken Roll",
+                price: "Rs. 350",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Delicious combination of potato and chicken in thin crispy pastry. Premium frozen snacks for the whole family.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/83a5e96db527d850f15fb5cde38fec2c",
+                category: "rolls"
+            },
+            {
+                name: "Chicken Sabzi Roll",
+                price: "Rs. 400",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Chicken and vegetable filled rolls with authentic spices. Healthy and tasty frozen snacks for any occasion.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/5e4ec6d7ca642ff2233ce2cf239cab17",
+                category: "rolls"
+            },
+            {
+                name: "Chicken Kabab Roll",
+                price: "Rs. 400",
+                unit: "Dozen",
+                quantity: "12 pieces",
+                description: "Thin crispy rolls with authentic kabab flavoring. Premium frozen snacks with traditional taste and quality.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/1a060cc1f0d9ce98b9e7ea17eaf11cec",
+                category: "rolls"
+            },
+            {
+                name: "Samosa Roll Patti",
+                price: "Rs. 300",
+                unit: "Kg",
+                quantity: "1 kg",
+                description: "Perfect thin sheets for making homemade crispy rolls and samosas. High-quality pastry sheets for home cooking.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/c9d7ad79222ca82f39345c3b8c0b68b1",
+                category: "others"
+            },
+            {
+                name: "Chicken Seekh Kabab",
+                price: "Rs. 480",
+                unit: "Piece",
+                quantity: "12 pieces",
+                description: "Traditional seekh kabab ready to cook. Premium quality minced chicken with authentic spices and herbs.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/d72a9ba3ba2a7e615aca43d5ea2b2ee8",
+                category: "kababs"
+            },
+            {
+                name: "Chicken Chapli Kabab",
+                price: "Rs. 400",
+                unit: "Piece",
+                quantity: "8 pieces",
+                description: "Authentic Peshawar-style chapli kabab with traditional spices. Flat, round kababs perfect for grilling or frying.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/838a145657ef2924a7e81c7fe180b54f",
+                category: "kababs"
+            },
+            {
+                name: "Chicken Kofta",
+                price: "Rs. 380",
+                unit: "Piece",
+                quantity: "12 pieces",
+                description: "Spicy meatballs with traditional Pakistani flavors. Perfect for curries or as standalone snacks with authentic taste.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/48f41f962ae1f608d2a0a69b281eb864",
+                category: "kababs"
+            },
+            {
+                name: "Chicken Nuggets",
+                price: "Rs. 480",
+                unit: "Piece",
+                quantity: "20 pieces",
+                description: "Fresh and tasty fried chicken nuggets. Kids' favorite frozen snacks with crispy coating and tender chicken inside.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/7ed97e79e720d6434458e04b1651c296",
+                category: "others"
+            },
+            {
+                name: "Chicken Fries",
+                price: "Rs. 430",
+                unit: "Piece",
+                quantity: "16 pieces",
+                description: "Crispy chicken strips perfect for frying. Great snack option with golden crispy texture and juicy chicken inside.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/1b58faead75a81845102908d2fc4fb15",
+                category: "others"
+            },
+            {
+                name: "Chicken Gola Kabab",
+                price: "Rs. 430",
+                unit: "Piece",
+                quantity: "18 pieces",
+                description: "Round-shaped kababs with rich flavors and authentic spices. Premium frozen kababs ready to cook for any occasion.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/9a290e092784a350b036a32066e97c98",
+                category: "kababs"
+            },
+            {
+                name: "Burger Patty",
+                price: "Rs. 480",
+                unit: "Piece",
+                quantity: "8 pieces",
+                description: "Premium beef and chicken mix burger patties. Perfect for homemade burgers with restaurant-quality taste and texture.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/fa8aa841e9984ca0284dc7f36412e305",
+                category: "others"
+            },
+            {
+                name: "Chicken Shami Kabab",
+                price: "Rs. 380",
+                unit: "Piece",
+                quantity: "12 pieces",
+                description: "Traditional shami kabab with lentils and spices. Soft texture with authentic Pakistani flavors and premium ingredients.",
+                badge: "",
+                image: "https://page.gensparksite.com/v1/base64_upload/ba88e10fc53702ddf23f402f378e00dd",
+                category: "kababs"
+            },
+            {
+                name: "Special Chicken Shami Kabab",
+                price: "Rs. 550",
+                unit: "Piece",
+                quantity: "12 pieces",
+                description: "Premium version of traditional shami kabab with extra spices and premium chicken. Special recipe with enhanced flavors.",
+                badge: "Save-50",
+                image: "https://page.gensparksite.com/v1/base64_upload/d1251a8ea00c6fa77e94c0eb19178d03",
+                category: "kababs"
+            }
+        ];
 
-        // Contact form submission
-        function sendMessage(event) {
-            event.preventDefault();
-            const form = event.target;
-            const name = form.querySelector('input[placeholder="Your Name"]').value;
-            const phone = form.querySelector('input[placeholder="Phone Number"]').value;
-            const message = form.querySelector('textarea').value;
-            
-            const whatsappMessage = `Hello! My name is ${name}. Phone: ${phone}. Message: ${message}`;
-            const whatsappUrl = `https://wa.me/923218050040?text=${encodeURIComponent(whatsappMessage)}`;
-            window.open(whatsappUrl, '_blank');
-            
-            // Reset form
-            form.reset();
-        }
+        // DOM Elements
+        const productsGrid = document.getElementById('products-grid');
+        const searchInput = document.getElementById('product-search');
+        const searchResults = document.getElementById('search-results');
+        const categoryFilters = document.querySelectorAll('.category-filter');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const orderModal = document.getElementById('order-modal');
+        let currentFilter = 'all';
+        let searchTerm = '';
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Simple fade-in animation on scroll
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.menu-card, .fade-in');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight - 100) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        }
-
-        // Initialize animation states
+        // Initialize the app
         document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.menu-card').forEach(element => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(20px)';
-                element.style.transition = 'all 0.6s ease';
-            });
-            
-            // Run animations
-            setTimeout(animateOnScroll, 100);
+            renderProducts();
+            setupEventListeners();
+            setupLazyLoading();
+            setupSmoothScrolling();
         });
 
-        // Run animations on scroll
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
+        // Render products function
+        function renderProducts() {
+            let filteredProducts = products;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filteredProducts = products.filter(product => product.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (searchTerm) {
+                filteredProducts = filteredProducts.filter(product => 
+                    product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    product.description.toLowerCase().includes(searchTerm.toLowerCase())
+                );
+            }
+
+            productsGrid.innerHTML = filteredProducts.map(product => `
+                <article class="food-card bg-white shadow-lg product-card" data-category="${product.category}">
+                    <div class="relative">
+                        <img src="${product.image}" 
+                             alt="${product.name}" 
+                             class="lazy-image w-full h-48 object-cover" 
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'">
+                        ${product.badge ? `<span class="badge badge-${product.badge.toLowerCase().replace('-', '').replace(' ', '')} absolute top-2 right-2">${product.badge}</span>` : ''}
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">${product.name}</h3>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-2xl font-bold text-orange-500">${product.price}</span>
+                            <span class="text-sm text-gray-500">${product.quantity}</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">${product.description}</p>
+                        <button onclick="showOrderModal('${product.name}', '${product.quantity}')" 
+                                class="order-btn text-white px-6 py-3 rounded-full font-semibold inline-flex items-center space-x-2 w-full justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Order on WhatsApp</span>
+                        </button>
+                    </div>
+                </article>
+            `).join('');
+
+            // Trigger lazy loading for newly added images
+            setupLazyLoading();
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Category filters
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    filter.classList.add('active');
+                    currentFilter = filter.getAttribute('data-category');
+                    renderProducts();
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                searchTerm = this.value;
+                renderProducts();
+                if (searchTerm) {
+                    showSearchResults();
+                } else {
+                    hideSearchResults();
+                }
+            });
+
+            // Mobile menu
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close search results when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                    hideSearchResults();
+                }
+            });
+        }
+
+        // Setup lazy loading
+        function setupLazyLoading() {
+            const images = document.querySelectorAll('.lazy-image');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            images.forEach(img => imageObserver.observe(img));
+        }
+
+        // Setup smooth scrolling
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        // Close mobile menu if open
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        }
+
+        // Search results functions
+        function showSearchResults() {
+            const results = products.filter(product =>
+                product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                product.description.toLowerCase().includes(searchTerm.toLowerCase())
+            ).slice(0, 5);
+
+            if (results.length > 0) {
+                searchResults.innerHTML = results.map(product => `
+                    <div class="p-3 hover:bg-gray-50 cursor-pointer border-b" onclick="selectSearchResult('${product.name}')">
+                        <div class="flex items-center space-x-3">
+                            <img src="${product.image}" alt="${product.name}" class="w-12 h-12 object-cover rounded">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">${product.name}</h4>
+                                <p class="text-sm text-gray-600">${product.price}</p>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.innerHTML = '<div class="p-3 text-gray-500">No products found</div>';
+                searchResults.classList.remove('hidden');
+            }
+        }
+
+        function hideSearchResults() {
+            searchResults.classList.add('hidden');
+        }
+
+        function selectSearchResult(productName) {
+            const product = products.find(p => p.name === productName);
+            if (product) {
+                searchInput.value = product.name;
+                searchTerm = product.name;
+                hideSearchResults();
+                renderProducts();
+                document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Order modal functions
+        function showOrderModal(productName, quantity) {
+            orderModal.classList.add('show');
+            document.getElementById('proceed-order').onclick = function() {
+                orderProduct(productName, quantity);
+            };
+        }
+
+        function closeModal() {
+            orderModal.classList.remove('show');
+        }
+
+        function orderProduct(productName, quantity) {
+            const message = `Hi, I want to order ${productName} – ${quantity}. Please confirm availability.`;
+            const whatsappUrl = `https://wa.me/923214591508?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            closeModal();
+        }
+
+        // Delivery app functions
+        function openDeliveryApp(app) {
+            const location = "https://www.google.com/maps/place/31%C2%B032'54.2%22N+74%C2%B022'38.5%22E/@31.5483934,74.3747862,707m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d31.5483889!4d74.3773611?hl=en&entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D";
+            const appUrls = {
+                careem: `careem://location?lat=31.54839324951172&lng=74.37737274169922`,
+                uber: `uber://?action=setPickup&pickup[latitude]=31.54839324951172&pickup[longitude]=74.37737274169922`,
+                yango: `yango://location?lat=31.54839324951172&lng=74.37737274169922`,
+                bykea: `bykea://pickup?lat=31.54839324951172&lng=74.37737274169922`,
+                indrive: `indrive://location?lat=31.54839324951172&lng=74.37737274169922`
+            };
+
+            // Try to open the app
+            const appUrl = appUrls[app];
+            const fallbackDelay = 2000;
+            const iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = appUrl;
+            document.body.appendChild(iframe);
+
+            // Fallback to browser after delay
+            setTimeout(() => {
+                document.body.removeChild(iframe);
+                window.open(location, '_blank');
+            }, fallbackDelay);
+        }
+
+        // Close modal when clicking outside
+        orderModal.addEventListener('click', function(e) {
+            if (e.target === orderModal) {
+                closeModal();
+            }
+        });
+
+        // Set active filter styling
+        document.querySelector('.category-filter[data-category="all"]').classList.add('active');
+
+        // Performance optimizations
+        window.addEventListener('load', function() {
+            // Preload critical images
+            const criticalImages = products.slice(0, 6).map(product => {
+                const img = new Image();
+                img.src = product.image;
+                return img;
+            });
+        });
     </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"97199fa58928f87d","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"97a67e69fd361ecc","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.8.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
 </body>
 </html>
-    <script id="html_badge_script1">
-        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
-            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDuZv7lVRdMBdV2GCFodIOj2aneGf4yR53toSrASqX7OsZBdq%2F2ne2oK4joWzwOQOqKOY6RUrGKoLjjUR%2BuBsXJfVaw8o9lfZZZUgYn6StkWcYcu5V3HhsdyWnYjLuq5JtTAdS6TsxJdF%2FhR%2BzGXddHyI1JWBBqQqcRWuJxWmYpfgoDnksfe60RZTduK81T%2F2GT%2F9xa9z4twn15tt%2FuslZN78uUTjdAuhajwuswX4%2BCk0WnTWAtexLZKuJklDpuNKJmwOzuzSbl7CXxeSQDXuxOGTS0Ey8JNG0buOXU1y2QP05zKToF%2Fy2Mp3j1VdpioC%2FSmKW8N8XQAbPVu7WCqjyeV3iBPHgFtQ8YeBuO77ma507ddbGo59O1nPomf5HQPWpt3LWbpnFqOjUhj9WHyOSFXv%2Bd56cLiGUgvEkVnKV9sKIkGvQ%2Bg6fIGowpE2cJB5UuEjrZqwXnFieiCLr7TFVviwzz%2F%2FuGtdaFPUfqHDTAQLL3%2BO4%2BFA%2BTPaPJ6J0e9bkPyeH%2Bi9NMpDsYCnlaQqypY%3D";
-        window.__genspark_locale = "en-US";
-        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDuZv7lVRdMBdV2GCFodIOj2aneGf4yR53toSrASqX7OsZBdq/2ne2oK4joWzwOQOqKOY6RUrGKoLjjUR+uBsXJfVaw8o9lfZZZUgYn6StkWcYcu5V3HhsdyWnYjLuq5JtTAdS6TsxJdF/hR+zGXddHyI1JWBBqQqcRWuJxWmYpfgoDnksfe60RZTduK81T/2GT/9xa9z4twn15tt/uslZN78uUTjdAuhajwuswX4+Ck0WnTWAtexLZKuJklDpuNKJmwOzuzSbl7CXxeSQDXuxOGTS0Ey8JNG0buOXU1y2QP05zKToF/y2Mp3j1VdpioC/SmKW8N8XQAbPVu7WCqjyeV3iBPHgFtQ8YeBuO77ma507ddbGo59O1nPomf5HQPWpt3LWbpnFqOjUhj9WHyOSFXv+d56cLiGUgvEkVnKV9sKIkGvQ+g6fIGowpE2cJB5UuEjrZqwXnFieiCLr7TFVviwzz//uGtdaFPUfqHDTAQLL3+O4+FA+TPaPJ6J0e9bkPyeH+i9NMpDsYCnlaQqypY=";
-    </script>
-    
-    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
-    
+      
